@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <title>Highcharts Example</title>
+            </head>
+    <body>
+        
+        <div id="container" style="width:100%; height: 400px;"></div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        
+        <script>
+            
+            $(function () {
+              $('#container').highcharts({
+                                         chart: {
+                                         type: 'pie',
+                                         options3d: {
+                                         enabled: true,
+                                         alpha: 45,
+                                         beta: 0
+                                         }
+                                         },
+                                         title: {
+                                         text: 'iPhone market share in the US in 2014'
+                                         },
+                                         tooltip: {
+                                         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                                         },
+                                         plotOptions: {
+                                         pie: {
+                                         allowPointSelect: true,
+                                         cursor: 'pointer',
+                                         depth: 35,
+                                         dataLabels: {
+                                         enabled: true,
+                                         format: '{point.name}'
+                                         }
+                                         }
+                                         },
+                                         series: [{
+                                                  type: 'pie',
+                                                  name: 'Market share',
+                                                  data: [
+                                                         ['Samsung',   45.0],
+                                                         ['HTC',       26.8],
+                                                         {
+                                                         name: 'iPhone',
+                                                         y: 28.2,
+                                                         sliced: true,
+                                                         selected: true
+                                                         }
+                                                         ]
+                                                  }]
+                                         });
+              });
+            </script>
+        
+    </body>
+</html>

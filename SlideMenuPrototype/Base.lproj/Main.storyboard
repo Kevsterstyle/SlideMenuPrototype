@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="kYo-MX-j1u">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="K9k-Dr-zTk">
+            <objects>
+                <viewController storyboardIdentifier="Chart1" id="FZ7-7D-oOP" customClass="ViewController1" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OoD-eO-BNS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y45-h4-9DX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qtm-yQ-IdB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4s-Ns-De2">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A4s-Ns-De2" secondAttribute="trailing" constant="-16" id="Ggq-dS-AV7"/>
+                            <constraint firstItem="Y45-h4-9DX" firstAttribute="top" secondItem="A4s-Ns-De2" secondAttribute="bottom" id="JEa-zT-Lf2"/>
+                            <constraint firstItem="A4s-Ns-De2" firstAttribute="top" secondItem="OoD-eO-BNS" secondAttribute="bottom" id="RAN-Wc-CDb"/>
+                            <constraint firstItem="A4s-Ns-De2" firstAttribute="leading" secondItem="Qtm-yQ-IdB" secondAttribute="leadingMargin" constant="-16" id="lwA-du-LRg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lWO-n4-YcY">
+                        <barButtonItem key="leftBarButtonItem" title="Toggle menu" id="NQJ-cE-AG2">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="FZ7-7D-oOP" id="wBL-Xx-anW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="containerView" destination="A4s-Ns-De2" id="RQf-tt-oDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e9U-fK-J20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="455"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="D4c-e6-WcE">
+            <objects>
+                <viewController storyboardIdentifier="Chart2" id="wa2-6j-mwM" customClass="ViewController2" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NI9-Pe-my6"/>
+                        <viewControllerLayoutGuide type="bottom" id="JvM-AM-QLF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l99-M2-ube">
+                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nt4-rN-4kO">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nt4-rN-4kO" firstAttribute="leading" secondItem="l99-M2-ube" secondAttribute="leadingMargin" constant="-16" id="A3W-9D-ZdK"/>
+                            <constraint firstItem="Nt4-rN-4kO" firstAttribute="top" secondItem="NI9-Pe-my6" secondAttribute="bottom" id="KSH-q0-3Vu"/>
+                            <constraint firstItem="JvM-AM-QLF" firstAttribute="top" secondItem="Nt4-rN-4kO" secondAttribute="bottom" id="M9S-GG-uNN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nt4-rN-4kO" secondAttribute="trailing" constant="-16" id="guV-11-kaZ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ii0-g7-LDe" userLabel="Navigation Item">
+                        <barButtonItem key="leftBarButtonItem" title="Toggle menu" id="e5R-Rk-BEf" userLabel="Toggle menu">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="wa2-6j-mwM" id="Tu2-6v-yjN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="Nt4-rN-4kO" id="UwB-Fk-5gJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9y3-di-gzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="384"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="Fun-cX-Y9d">
+            <objects>
+                <viewController storyboardIdentifier="Chart3" id="NYM-X4-2Wk" customClass="ViewController3" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bZx-LX-tMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="7LE-43-kWr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mV1-lC-mu9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ac4-aC-0OP">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ac4-aC-0OP" firstAttribute="top" secondItem="bZx-LX-tMI" secondAttribute="bottom" id="4bn-fo-sm4"/>
+                            <constraint firstItem="Ac4-aC-0OP" firstAttribute="leading" secondItem="mV1-lC-mu9" secondAttribute="leadingMargin" constant="-16" id="Gti-wX-MfX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ac4-aC-0OP" secondAttribute="trailing" constant="-16" id="KsT-NA-hNt"/>
+                            <constraint firstItem="7LE-43-kWr" firstAttribute="top" secondItem="Ac4-aC-0OP" secondAttribute="bottom" id="WmH-v1-FUn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NV6-fz-2L9">
+                        <barButtonItem key="leftBarButtonItem" title="Toggle menu" id="MeV-uG-Q2R">
+                            <connections>
+                                <action selector="toggleSideMenu:" destination="NYM-X4-2Wk" id="4B5-k3-t7h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="Ac4-aC-0OP" id="sqS-1Z-5gJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ski-e1-YHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="1004"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KVv-hX-HYX">
+            <objects>
+                <navigationController id="kYo-MX-j1u" customClass="NavigationController" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="046-TN-MDL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FZ7-7D-oOP" kind="relationship" relationship="rootViewController" id="Yxe-1h-6QO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dx-eS-Tze" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.53333333333333" y="455.34666666666664"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
