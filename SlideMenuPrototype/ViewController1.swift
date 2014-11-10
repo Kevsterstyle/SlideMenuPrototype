@@ -27,7 +27,9 @@ class ViewController1: UIViewController {
         super.viewDidLoad()
         
         //var path = NSBundle.mainBundle().pathForResource("index1", ofType: "htm")
-  
+        var url = NSURL(string: "https://dl.dropboxusercontent.com/u/41901902/website/index1.htm")
+        var request = NSURLRequest(URL: url!)
+        self.webView?.loadRequest(request)
         
         self.webView?.scrollView.scrollEnabled = false
         self.webView?.scrollView.bounces = false
