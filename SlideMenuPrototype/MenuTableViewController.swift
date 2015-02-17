@@ -44,7 +44,7 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 3
+        return 6
     }
 
     
@@ -83,7 +83,13 @@ class MenuTableViewController: UITableViewController {
             break
         case 1: destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Chart2") as UIViewController
             break
-        default: destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Chart3") as UIViewController
+        case 2: destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Chart3") as UIViewController
+            break
+        case 3: destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Chart4") as UIViewController
+            break
+        case 4: destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Chart5") as UIViewController
+            break
+        default: destViewController = mainStoryboard.instantiateViewControllerWithIdentifier("Chart6") as UIViewController
             break
             
         }

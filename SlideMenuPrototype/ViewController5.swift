@@ -1,15 +1,15 @@
 //
-//  ViewController2.swift
+//  ViewController5.swift
 //  SlideMenuPrototype
 //
-//  Created by Kevin Frei on 30.10.14.
-//  Copyright (c) 2014 Team Project. All rights reserved.
+//  Created by Kevin Frei on 17.02.15.
+//  Copyright (c) 2015 Team Project. All rights reserved.
 //
 
 import UIKit
 import WebKit
 
-class ViewController2: UIViewController {
+class ViewController5: UIViewController {
 
     @IBOutlet weak var containerView: UIWebView!
     var webView: WKWebView?
@@ -17,27 +17,24 @@ class ViewController2: UIViewController {
     override func loadView() {
         super.loadView()
         
-        self.webView = WKWebView(frame: self.containerView.frame)
+        self.webView = WKWebView(frame: containerView.frame)
         self.view.addSubview(webView!)
         self.webView?.reload()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //var path = NSBundle.mainBundle().pathForResource("index2", ofType: "htm")
-        var url = NSURL(string: "https://dl.dropboxusercontent.com/u/41901902/website/page_2_001.html")
+        
+        //var path = NSBundle.mainBundle().pathForResource("index3", ofType: "htm")
+        var url = NSURL(string: "https://dl.dropboxusercontent.com/u/41901902/website/page_5_001.html")
         var request = NSURLRequest(URL: url!)
         self.webView?.loadRequest(request)
         
-        self.containerView.scrollView.scrollEnabled = false
-        self.containerView.scrollView.bounces = false
-        self.containerView.scrollView.clipsToBounds = false
-        self.view.clipsToBounds = false
         
         self.webView?.scrollView.scrollEnabled = false
         self.webView?.scrollView.bounces = false
         self.webView?.scrollView.clipsToBounds = false // IMPORTANT!!!
+        
         
     }
 

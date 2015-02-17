@@ -26,7 +26,7 @@ class ViewController3: UIViewController {
         super.viewDidLoad()
 
         //var path = NSBundle.mainBundle().pathForResource("index3", ofType: "htm")
-        var url = NSURL(string: "https://dl.dropboxusercontent.com/u/41901902/website/index3.htm")
+        var url = NSURL(string: "https://dl.dropboxusercontent.com/u/41901902/website/page_3_001.html")
         var request = NSURLRequest(URL: url!)
         self.webView?.loadRequest(request)
         
