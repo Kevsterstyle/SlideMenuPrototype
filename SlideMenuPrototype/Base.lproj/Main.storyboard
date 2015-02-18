@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller1-->
+        <!--Chart 1-->
         <scene sceneID="K9k-Dr-zTk">
             <objects>
                 <viewController storyboardIdentifier="Chart1" id="FZ7-7D-oOP" customClass="ViewController1" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,7 +30,7 @@
                             <constraint firstItem="A4s-Ns-De2" firstAttribute="leading" secondItem="Qtm-yQ-IdB" secondAttribute="leadingMargin" constant="-16" id="lwA-du-LRg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="lWO-n4-YcY">
+                    <navigationItem key="navigationItem" title="Chart 1" id="lWO-n4-YcY">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="NQJ-cE-AG2" userLabel="Menu">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="FZ7-7D-oOP" id="wBL-Xx-anW"/>
@@ -45,7 +45,7 @@
             </objects>
             <point key="canvasLocation" x="530" y="455"/>
         </scene>
-        <!--View Controller2-->
+        <!--Chart 2-->
         <scene sceneID="D4c-e6-WcE">
             <objects>
                 <viewController storyboardIdentifier="Chart2" id="wa2-6j-mwM" customClass="ViewController2" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Ii0-g7-LDe" userLabel="Navigation Item">
+                    <navigationItem key="navigationItem" title="Chart 2" id="Ii0-g7-LDe" userLabel="Navigation Item">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="e5R-Rk-BEf">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="wa2-6j-mwM" id="Tu2-6v-yjN"/>
@@ -88,7 +88,7 @@
             </objects>
             <point key="canvasLocation" x="900" y="384"/>
         </scene>
-        <!--View Controller3-->
+        <!--Chart 3-->
         <scene sceneID="Fun-cX-Y9d">
             <objects>
                 <viewController storyboardIdentifier="Chart3" id="NYM-X4-2Wk" customClass="ViewController3" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +113,7 @@
                             <constraint firstItem="7LE-43-kWr" firstAttribute="top" secondItem="Ac4-aC-0OP" secondAttribute="bottom" id="WmH-v1-FUn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NV6-fz-2L9">
+                    <navigationItem key="navigationItem" title="Chart 3" id="NV6-fz-2L9">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="MeV-uG-Q2R">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="NYM-X4-2Wk" id="4B5-k3-t7h"/>
@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="104.53333333333333" y="455.34666666666664"/>
         </scene>
-        <!--View Controller4-->
+        <!--Chart 4-->
         <scene sceneID="CFN-Zo-Yic">
             <objects>
                 <viewController storyboardIdentifier="Chart4" id="tz3-hV-3yW" customClass="ViewController4" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
@@ -171,7 +171,7 @@
                             <constraint firstItem="yEg-zC-dzP" firstAttribute="leading" secondItem="7Mz-0r-ZE2" secondAttribute="leadingMargin" constant="-16" id="pdJ-hU-vvs"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ayb-Kr-pK7">
+                    <navigationItem key="navigationItem" title="Chart 4" id="Ayb-Kr-pK7">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="9Rc-Kk-2TG">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="tz3-hV-3yW" id="hhZ-1g-EBz"/>
@@ -189,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="1302" y="598"/>
         </scene>
-        <!--View Controller5-->
+        <!--Chart 5-->
         <scene sceneID="G7K-wh-86J">
             <objects>
                 <viewController storyboardIdentifier="Chart5" id="QgD-4g-BLo" customClass="ViewController5" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +214,7 @@
                             <constraint firstItem="tSE-yQ-yPx" firstAttribute="top" secondItem="Yus-Z1-MGJ" secondAttribute="bottom" id="smo-ZI-h65"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wEF-g5-VXz">
+                    <navigationItem key="navigationItem" title="Chart 5" id="wEF-g5-VXz">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="UV2-PZ-zEK">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="QgD-4g-BLo" id="Vze-Qi-LmV"/>
@@ -232,7 +232,7 @@
             </objects>
             <point key="canvasLocation" x="1696" y="337"/>
         </scene>
-        <!--View Controller6-->
+        <!--Chart 6-->
         <scene sceneID="cur-VC-crl">
             <objects>
                 <viewController storyboardIdentifier="Chart6" id="tLn-8o-l6G" customClass="ViewController6" customModule="SlideMenuPrototype" customModuleProvider="target" sceneMemberID="viewController">
@@ -259,7 +259,7 @@
                             <constraint firstItem="l4P-9H-bve" firstAttribute="top" secondItem="c9v-4q-B7U" secondAttribute="bottom" id="g1j-h7-cKS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8Hy-Xn-wM6">
+                    <navigationItem key="navigationItem" title="Chart 6" id="8Hy-Xn-wM6">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="v16-zB-CFD">
                             <connections>
                                 <action selector="toggleSideMenu:" destination="tLn-8o-l6G" id="yDK-BU-Dql"/>

@@ -21,6 +21,7 @@ class ViewController1: UIViewController {
         self.webView = WKWebView(frame: self.containerView!.frame)
         self.view.addSubview(webView!)
         self.webView?.reload()
+   
     }
     
     override func viewDidLoad() {
