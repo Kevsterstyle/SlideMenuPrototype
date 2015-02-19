@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController5: UIViewController {
+class ViewController5: UIViewController, WKNavigationDelegate {
 
     @IBOutlet weak var containerView: UIWebView!
     var webView: WKWebView?
@@ -29,13 +29,26 @@ class ViewController5: UIViewController {
         var url = NSURL(string: "https://dl.dropboxusercontent.com/u/41901902/website/page_5_001.html")
         var request = NSURLRequest(URL: url!)
         self.webView?.loadRequest(request)
-        
+        self.webView?.navigationDelegate = self
         
         self.webView?.scrollView.scrollEnabled = false
         self.webView?.scrollView.bounces = false
         self.webView?.scrollView.clipsToBounds = false // IMPORTANT!!!
-        
-        
+    }
+    
+    //Start the network activity indicatior in the status bar when the web view is loading
+    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+    }
+    
+    //Stop the network activity indicatior in the status bar when the web view finished loading
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+    }
+    
+    //In case of an error stop the animation
+    func webView(webView: UIWebView!, didFailLoadWithError error: NSError!) {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
     }
 
     override func didReceiveMemoryWarning() {
